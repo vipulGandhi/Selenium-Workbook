@@ -58,11 +58,20 @@
 
 // Project Creation
 	// Create maven project: Group ID: org.apache.maven.archetypes, Artifact id: maven-archetype-quickstart
-	// src/test/java is only for writing test cases
-	// Right click project -> New -> Source Folder
-		// Name it: src/test/resources
-		// This source folder will contain all the external files used in the project
-			// Example: xml files, json files, properties, excel sheets etc
+		// src/test/java is only for writing test cases
+		// Right click project -> New -> Source Folder
+			// Name it: src/test/resources
+			// This source folder will contain all the external files used in the project
+				// Example: xml files, json files, properties, excel sheets etc
+		// pom.xml file will be generate
+			// update the version to 1.8
+				/*
+				    <properties>
+    					<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    					<maven.compiler.source>1.8</maven.compiler.source>
+    					<maven.compiler.target>1.8</maven.compiler.target>
+  					</properties>
+				 */
 
 
 // ---------------------- Real-time scenarios with solution ---------------------------------------------------------
