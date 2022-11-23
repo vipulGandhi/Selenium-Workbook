@@ -73,6 +73,9 @@
   					</properties>
 				 */
 
+// Automation is generally for Happy Path Scenarios
+	// If the application contains too many complex negative scenarios, considder testing them manually
+
 
 // ---------------------- Real-time scenarios with solution ---------------------------------------------------------
 
