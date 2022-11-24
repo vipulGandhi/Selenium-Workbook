@@ -29,7 +29,7 @@
 	
 	<test name = "Orange HRM Test">
 		<parameter name = "url" value = "https://www.orangehrm.com/"/>
-		<parameter name = "browser" value = "Safari"/>
+		<parameter name = "browser" value = "Chrome"/>
 		<classes>
 			<class name = "AppTest.OrangeHRMTest"/>
 		</classes>

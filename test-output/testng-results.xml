@@ -1,53 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-11T18:44:26 IST" name="Default suite" finished-at="2022-11-11T18:44:26 IST" duration-ms="33">
+  <suite started-at="2022-11-23T20:03:53 IST" name="Smoke Test" finished-at="2022-11-23T20:04:04 IST" duration-ms="11655">
     <groups>
     </groups>
-    <test started-at="2022-11-11T18:44:26 IST" name="Default test" finished-at="2022-11-11T18:44:26 IST" duration-ms="33">
-      <class name="TestNGConcepts.T_08_InvocationCountConcept">
-        <test-method signature="printNumber()[pri:0, instance:TestNGConcepts.T_08_InvocationCountConcept@32502377]" started-at="2022-11-11T18:44:26 IST" name="printNumber" finished-at="2022-11-11T18:44:26 IST" duration-ms="4" status="PASS">
+    <test started-at="2022-11-23T20:03:53 IST" name="Google Test" finished-at="2022-11-23T20:03:57 IST" duration-ms="4010">
+      <class name="AppTest.GoogleTest">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:AppTest.GoogleTest@229c6181]" started-at="2022-11-23T20:03:53 IST" name="setup" finished-at="2022-11-23T20:03:57 IST" duration-ms="3848" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.google.co.in/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- printNumber -->
-        <test-method signature="printNumber()[pri:0, instance:TestNGConcepts.T_08_InvocationCountConcept@32502377]" started-at="2022-11-11T18:44:26 IST" name="printNumber" finished-at="2022-11-11T18:44:26 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="searchFieldTest()[pri:0, instance:AppTest.GoogleTest@229c6181]" started-at="2022-11-23T20:03:57 IST" name="searchFieldTest" finished-at="2022-11-23T20:03:57 IST" duration-ms="31" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- printNumber -->
-        <test-method signature="printNumber()[pri:0, instance:TestNGConcepts.T_08_InvocationCountConcept@32502377]" started-at="2022-11-11T18:44:26 IST" name="printNumber" finished-at="2022-11-11T18:44:26 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- searchFieldTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AppTest.GoogleTest@229c6181]" started-at="2022-11-23T20:03:57 IST" name="tearDown" finished-at="2022-11-23T20:03:57 IST" duration-ms="109" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- printNumber -->
-        <test-method signature="printNumber()[pri:0, instance:TestNGConcepts.T_08_InvocationCountConcept@32502377]" started-at="2022-11-11T18:44:26 IST" name="printNumber" finished-at="2022-11-11T18:44:26 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AppTest.GoogleTest@229c6181]" started-at="2022-11-23T20:03:57 IST" name="tearDown" finished-at="2022-11-23T20:03:57 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- printNumber -->
-        <test-method signature="printNumber()[pri:0, instance:TestNGConcepts.T_08_InvocationCountConcept@32502377]" started-at="2022-11-11T18:44:26 IST" name="printNumber" finished-at="2022-11-11T18:44:26 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- tearDown -->
+      </class> <!-- AppTest.GoogleTest -->
+    </test> <!-- Google Test -->
+    <test started-at="2022-11-23T20:03:53 IST" name="Open Cart Test" finished-at="2022-11-23T20:03:57 IST" duration-ms="4530">
+      <class name="AppTest.OpenCartTest">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:AppTest.OpenCartTest@563f38c4]" started-at="2022-11-23T20:03:53 IST" name="setup" finished-at="2022-11-23T20:03:57 IST" duration-ms="4121" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://demo.opencart.com/index.php?route=account/login]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- printNumber -->
-        <test-method signature="printNumber()[pri:0, instance:TestNGConcepts.T_08_InvocationCountConcept@32502377]" started-at="2022-11-11T18:44:26 IST" name="printNumber" finished-at="2022-11-11T18:44:26 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="urlTest()[pri:0, instance:AppTest.OpenCartTest@563f38c4]" started-at="2022-11-23T20:03:57 IST" name="urlTest" finished-at="2022-11-23T20:03:57 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- printNumber -->
-        <test-method signature="printNumber()[pri:0, instance:TestNGConcepts.T_08_InvocationCountConcept@32502377]" started-at="2022-11-11T18:44:26 IST" name="printNumber" finished-at="2022-11-11T18:44:26 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- urlTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AppTest.OpenCartTest@563f38c4]" started-at="2022-11-23T20:03:57 IST" name="tearDown" finished-at="2022-11-23T20:03:57 IST" duration-ms="401" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- printNumber -->
-        <test-method signature="printNumber()[pri:0, instance:TestNGConcepts.T_08_InvocationCountConcept@32502377]" started-at="2022-11-11T18:44:26 IST" name="printNumber" finished-at="2022-11-11T18:44:26 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AppTest.OpenCartTest@563f38c4]" started-at="2022-11-23T20:03:57 IST" name="tearDown" finished-at="2022-11-23T20:03:57 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- printNumber -->
-        <test-method signature="printNumber()[pri:0, instance:TestNGConcepts.T_08_InvocationCountConcept@32502377]" started-at="2022-11-11T18:44:26 IST" name="printNumber" finished-at="2022-11-11T18:44:26 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- tearDown -->
+      </class> <!-- AppTest.OpenCartTest -->
+    </test> <!-- Open Cart Test -->
+    <test started-at="2022-11-23T20:03:53 IST" name="Orange HRM Test" finished-at="2022-11-23T20:04:04 IST" duration-ms="11655">
+      <class name="AppTest.OrangeHRMTest">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:AppTest.OrangeHRMTest@3b0fe47a]" started-at="2022-11-23T20:03:53 IST" name="setup" finished-at="2022-11-23T20:04:04 IST" duration-ms="11524" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.orangehrm.com/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- printNumber -->
-        <test-method signature="printNumber()[pri:0, instance:TestNGConcepts.T_08_InvocationCountConcept@32502377]" started-at="2022-11-11T18:44:26 IST" name="printNumber" finished-at="2022-11-11T18:44:26 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="urlTest()[pri:0, instance:AppTest.OrangeHRMTest@3b0fe47a]" started-at="2022-11-23T20:04:04 IST" name="urlTest" finished-at="2022-11-23T20:04:04 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- printNumber -->
-      </class> <!-- TestNGConcepts.T_08_InvocationCountConcept -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- urlTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AppTest.OrangeHRMTest@3b0fe47a]" started-at="2022-11-23T20:04:04 IST" name="tearDown" finished-at="2022-11-23T20:04:04 IST" duration-ms="121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AppTest.OrangeHRMTest@3b0fe47a]" started-at="2022-11-23T20:04:04 IST" name="tearDown" finished-at="2022-11-23T20:04:04 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- AppTest.OrangeHRMTest -->
+    </test> <!-- Orange HRM Test -->
+  </suite> <!-- Smoke Test -->
 </testng-results>
