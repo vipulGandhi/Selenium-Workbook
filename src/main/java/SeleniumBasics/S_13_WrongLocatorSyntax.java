@@ -18,7 +18,7 @@ public class S_13_WrongLocatorSyntax
 		
 		driver.get("https://www.orangehrm.com/orangehrm-30-day-trial/");
 		
-		// If the XPath locator is invalid
+		// If the locator is invalid
 		// [Error] org.openqa.selenium.NoSuchElementException
 		// In Selenium 3, it gives "Invalid Selector" exception [Which is right]
 		By usernameBy = By.cssSelector("#orm_getForm_subdomain"); // Correct: By.cssSelector("#Form_getForm_subdomain")

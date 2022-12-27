@@ -2,7 +2,7 @@ package SeleniumBasics;
 
 public class S_03_AmazonTest
 {
-
+	
 	public static void main(String[] args)
 	{
 		GenericUtilities.BrowserUtil browserUtil = new GenericUtilities.BrowserUtil();

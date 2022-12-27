@@ -11,7 +11,7 @@ public class S_09_RegistrationPageTest
 
 	public static void main(String[] args)
 	{
-		GenericUtilities.BrowserUtil browserUtil = new BrowserUtil();
+		BrowserUtil browserUtil = new BrowserUtil();
 		WebDriver driver = browserUtil.launchBrowser("Chrome");
 		browserUtil.enterURL("https://demo.opencart.com/index.php?route=account/register&language=en-gb");
 		String titleString = browserUtil.getPageTitle();
@@ -25,18 +25,15 @@ public class S_09_RegistrationPageTest
 		elementUtil.doSendKeys(firstnameBy, "User First Name");
 		elementUtil.doSendKeys(lastnameBy, "User Last Name");
 		
-		try 
-		{
-			Thread.sleep(1000);
-		}
-		catch (InterruptedException e)
-		{
-			e.printStackTrace();
-		}
+//		try 
+//		{
+//			Thread.sleep(1000);
+//		}
+//		catch (InterruptedException e)
+//		{
+//			e.printStackTrace();
+//		}
 		
 		browserUtil.closeBrowser();
-		
-		
-		
 	}
 }

@@ -8,9 +8,11 @@
 
 // Recommended ? - No
 	// Only applicable for Sanity test cases
-// ================================================================================
-// Incognito: Does not maintain any cash or cookies
 
+// ================================================================================
+
+
+// Incognito: Does not maintain any cache or cookies
 
 // Run in headless and incognito mode
 package SeleniumBasics;

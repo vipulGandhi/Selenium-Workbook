@@ -2,7 +2,7 @@
 	// Selenium is a library to help simulate all the user actions on the browser
 	// Selenium interacts only with the elements which are visible on the page
 	// Selenium is just a web automation tool
-	// Selenium is a library and/or a tool and/or set of API's and/or a framework
+	// Selenium is a library/ a tool/ set of API's/ a framework
 
 // Advantages
 	// Selenium is only for Web UI automation
@@ -18,7 +18,7 @@
 // Disadvantages
 	// No desktop application can be automated with selenium
 	// Selenium is not a testing tool
-	// Selenium can't generate any test report (We have to use extent report, allure report, TestNG report)
+	// Selenium can't generate any test report (We have to use extent report - allure report, TestNG report)
 	// Performance or security testing could not be done with selenium - Only capable of functional testing
 	// It can't automate native mobile applications - Mobile browsers can be automated
 	// Can't do performance testing
@@ -28,11 +28,11 @@
 		// Language( Eg. Java) is responsible to make connection
 	// Don't trust AutoIT/ Robot classes
 		// AutoIT/ Robot only works on Windows, it does not work on docker/ linux machine
-	// We should never try to automate gmail, facebook, linkedin - they will block your account
+	// We should never try to automate gmail, facebook, linkedIn - they will block your account
 
 // Selenium Release History:
 	// Selenium IDE [2008]
-		// Record and play tool, available as firefox 
+		// Record and play tool, available as firefox extention
 	// Selenium RC/ Selenium 1 [2011]
 	// Selenium Webdriver/ Selenium 2 [2014]
 		// Deprecated Selenium RC
@@ -53,8 +53,8 @@
 	// Generated Json is sent to Browser Driver(Server) through http(W3C standard protocol) Protocol
 		// Each browser contains a separate browser driver
 	// Browser drivers communicates with its respective browser
-		// It executes the commands by interpreting Json which it received on the browser.
-	// Browser Driver receives responses back from the browser and it sends Json response to Client.
+		// It executes the commands by interpreting Json which it received on the browser
+	// Browser Driver receives responses back from the browser and it sends Json response to Client
 
 // Project Creation
 	// Create maven project: Group ID: org.apache.maven.archetypes, Artifact id: maven-archetype-quickstart
@@ -74,7 +74,7 @@
 				 */
 
 // Automation is generally for Happy Path Scenarios
-	// If the application contains too many complex negative scenarios, considder testing them manually
+	// If the application contains too many complex negative scenarios, consider testing them manually
 
 
 // ---------------------- Real-time scenarios with solution ---------------------------------------------------------
@@ -88,7 +88,7 @@
 		// Switch the driver to second child window -> Verify the child window -> Close the child window
 		// Switch the driver to third child window -> Verify the child window -> Close the child window
 		// Switch the driver to fourth child window -> Verify the child window -> Close the child window
-		// Switch the driver again to Parent window
+		// Switch the driver again to parent window
 
 // Solution - 02 [Better Approach]
 	// Open one child window, verify the child window, come back to parent window

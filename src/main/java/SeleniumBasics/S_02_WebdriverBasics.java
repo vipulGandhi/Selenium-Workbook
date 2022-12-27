@@ -1,6 +1,6 @@
 // Webdriver API
-	// Interface: SearchContext  [Methods declared: FindElement(), FindElements()]
-	// Interface: WebDriver extends SearchContext [Methods declared: get(), click(), sendKeys(), close()] etc. and TakeScreenshot
+	// Interface: SearchContext [Methods declared: FindElement(), FindElements()]
+	// Interface: WebDriver extends SearchContext [Methods declared: get(), click(), sendKeys(), close()] etc.
 	// Class: "RemoteWebDriver implements WebDriver, JavaScriptExecutor and TakeScreenshot
 		// All the methods of WebDriver interface is implemented in RemoteWebDriver
 		// RemoteWebDriver class can execute WebDriver commands on a browser running on a different (remote) machine
@@ -34,7 +34,6 @@ public class S_02_WebdriverBasics
 
 	public static void main(String[] args)
 	{
-		
 		//Windows
 		//System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "\\resources\\geckodriver.exe");
 		

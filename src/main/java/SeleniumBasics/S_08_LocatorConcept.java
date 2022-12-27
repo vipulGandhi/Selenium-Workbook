@@ -3,24 +3,23 @@
 	// name [Name can be duplicate][2nd preference to name]
 	// tag name
 		// Use Cases: [HTML tag]
-			// Find number of links on a webpage
+			// Find number of links on a webpage [<a> </a>]
 			// Find number of images on a webpage [HTML tag of image is always <img> </img>]
 	// Class name [We can have same class name for different elements]
 		// The value for class attribute may contains more than one class name 
 		// [Eg. <input class="c1 c2 c3 c4">] --> Locator: By classBy = By.className("c1");
 			// Only one class name is required
 	// CSS
-	// XPath [Address of element]
+	// XPath
 		// Every browser runs it's own XPath engine. The engines are strong. XPath is not slower than CSS
 			// The XPath index my differ
 		// Relative XPath [Recommended]
 		// Absolute XPath
 			// Start from root node [Not recommended]
 	// Linktext
-		// Text of the link
+		// UI Text of the link
 		// Linktext could be duplicate
 		// HTML tag of link is always <a></a>
-
 	// Partial link text
 
 // On a webpage: Right click -> Click on "Inspect"
@@ -61,7 +60,7 @@ public class S_08_LocatorConcept
 		
 		// 1st approach
 			// Cons
-				// Difficult to locate the element everywhere if it's  id changes
+				// Difficult to locate the element everywhere if it's id changes
 		//driver.findElement(By.id("input-email")).sendKeys("test@gmail.com");
 		//driver.findElement(By.id("input-password")).sendKeys("test@123");
 		
@@ -102,16 +101,16 @@ public class S_08_LocatorConcept
 		//doSendKeys(passwordBy, "password@123");
 		
 		// 6th approach: Element util class with generic methods
-		//By emailBy = By.id("input-email");
-		//By passwordBy = By.id("input-password");
-		//elementUtil.doSendKeys(emailBy, "test@gmail.com");
-		//elementUtil.doSendKeys(passwordBy, "password@123");
+		By emailBy = By.id("input-email");
+		By passwordBy = By.id("input-password");
+		elementUtil.doSendKeys(emailBy, "test@gmail.com");
+		elementUtil.doSendKeys(passwordBy, "password@123");
 		
 		// 7th approach: String locator values
-		String emailId = "input-email";
-		String passwordId = "input-password";
-		elementUtil.doSendKeys("id", emailId, "test@gmail.com");
-		elementUtil.doSendKeys("id", passwordId, "password@123");
+		//String emailId = "input-email";
+		//String passwordId = "input-password";
+		//elementUtil.doSendKeys("id", emailId, "test@gmail.com");
+		//elementUtil.doSendKeys("id", passwordId, "password@123");
 	}
 	
 	// Generic wrapper method
@@ -135,7 +134,6 @@ public class S_08_LocatorConcept
 	// Generic wrapper method
 	public static By getBy(String locatorType, String locatorValue)
 	{
-		
 		By locator = null;
 		
 		switch (locatorType.toLowerCase())

@@ -22,23 +22,24 @@ public class S_12_NoSuchElementConcept
 		
 		driver.get("https://www.orangehrm.com/");
 		
-		// "driver.findElements" - If the locator value is incorrect
-		// No Error will be thrown, "driver.findElements" returns 0
+		// If the locator is incorrect or the locator is not present:
+			// "driver.findElements(byLocator)" will throw no error and return 0
 		// [For multiple elements] Verify if the "navigationLinkHeaders" are present on a webpage
-		By navigationLinkHeadersBy = By.className("nav-link-hedd"); // Correct: By.className("nav-link-hedd")
+		By navigationLinkHeadersBy = By.className("nav-link-hedd"); // Correct: By.className("nav-link-hed")
 		if(elementUtil.isElementPresent(navigationLinkHeadersBy))
 		{
 			System.out.println(elementUtil.getElementsCount(navigationLinkHeadersBy) + " navigationLinkHeaders are present in the webpage");
 		}
 		
-		// "driver.findElement" - If the locator value is incorrect
-		// Error [org.openqa.selenium.NoSuchElementException]
+		// If the locator is incorrect or the locator is not present:
+			// "driver.findElement(byLocator)" will throw an error
+				// Error [org.openqa.selenium.NoSuchElementException]
 		//By platformLinkTextBy = By.linkText("Platformm"); //Correct: By.linkText("Platform")
 		//String platformLinkText = elementUtil.getElementText(platformLinkTextBy);
 		//System.out.println(platformLinkText);
 		
 		// [For single element] Verify if the "Platform" link is present on a webpage
-		By platformLinkBy = By.linkText("Platformm"); // Correct: By.className("nav-link-hedd")
+		By platformLinkBy = By.linkText("Platformm");  //Correct: By.linkText("Platform")
 		if(elementUtil.isElementPresent(platformLinkBy))
 		{
 			System.out.println("platform link is present in the webpage");

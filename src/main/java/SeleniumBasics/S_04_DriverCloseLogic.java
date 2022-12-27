@@ -26,7 +26,7 @@ public class S_04_DriverCloseLogic
 		System.out.println(driver.getTitle());
 
 		// Request is sent with the previously generated same session id
-		driver.close(); // browser is closed. Session id is deactivated
+		driver.close(); // browser is closed. Session id becomes invalid
 		
 		// [Error] org.openqa.selenium.NoSuchSessionException: invalid session id
 		// Request is sent with the previously generated same session id

@@ -34,8 +34,6 @@ public class S_05_DriverQuitLogic
 		// Create a new session id, launch a new browser
 		//driver = new ChromeDriver();
 		//driver.get("https://www.google.com/");
-
 	}
-
 }
 

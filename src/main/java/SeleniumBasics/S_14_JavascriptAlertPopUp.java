@@ -1,7 +1,7 @@
 // Browser understands only javascript
 // Web Pop-ups/ Modal pop-ups/ Modal dialogues/ Javascript pop-ups
 // We can't have multiple alerts at same time
-// Javascript alerts are not part of webpage - They are not inside HTML DOM. Web developer writes them
+// Javascript alerts are not part of webpage - They are not inside HTML DOM.
 
 
 package SeleniumBasics;

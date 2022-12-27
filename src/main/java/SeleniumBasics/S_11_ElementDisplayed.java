@@ -21,8 +21,6 @@ public class S_11_ElementDisplayed
 		driver.get("https://demo.opencart.com/index.php?route=account/login");
 		
 		By emailId = By.id("input-email");
-		System.out.println(elementUtil.isElementDisplayed(emailId));
-		
+		System.out.println(elementUtil.isElementDisplayed(emailId));	
 	}
-
 }

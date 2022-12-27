@@ -11,6 +11,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class BrowserUtil
 {
 	// The driver should not be static
+		// https://qualitytimes.tech/should-not-use-static-webdriver/
+		// https://www.freecodecamp.org/news/a-quick-intro-to-dependency-injection-what-it-is-and-when-to-use-it-7578c84fa88f/
 	public WebDriver driver;
 	
 	// This method is used to launch the browser on the basis of browser name

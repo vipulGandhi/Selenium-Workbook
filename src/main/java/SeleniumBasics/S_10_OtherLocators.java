@@ -61,7 +61,7 @@ public class S_10_OtherLocators
 			// Use where link text is long
 		
 		// By Tag name [1st example]
-		// Get all link text in a webpage [For any link if there is no text attached, remove that text]
+		// Print all link text in a webpage [For any link if there is no text attached, remove that text]
 		//By allLinkTextBy = By.tagName("a");
 		//elementUtil.printAllStringElements(elementUtil.getElementsText(allLinkTextBy));
 		
