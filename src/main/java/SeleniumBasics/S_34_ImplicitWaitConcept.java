@@ -48,6 +48,12 @@ public class S_34_ImplicitWaitConcept
 		WebDriver driver = new ChromeDriver();
 				
 		driver.manage().window().maximize();
+		
+		// Page timeout
+		// If the page does not load within 10 seconds, Exception will be thrown
+		// driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
+		
+		// Implicit wait
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
 		GenericUtilities.ElementUtil elementUtil = new GenericUtilities.ElementUtil(driver);

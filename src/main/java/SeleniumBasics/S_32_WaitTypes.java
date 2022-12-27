@@ -10,7 +10,7 @@
 			// Webdriver wait
 			// Fluent wait
 
-// Webdriver API Hierarchy
+// Webdriver Wait API Hierarchy
 	// Wait Interface [Methods declared: until()]
 	// FluentWait class implements Wait interface
 	// FluentWait contains:
@@ -21,3 +21,6 @@
 		// WebdriverWait has no class methods of it's own
 		// WebdriverWait is also a FluentWait
 			// Both can be used interchangeably
+
+// Misc
+	// To handle asynchronous page load and AJAX calls we use selenium wait 
