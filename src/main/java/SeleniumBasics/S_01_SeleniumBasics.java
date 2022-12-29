@@ -64,6 +64,7 @@
 			// This source folder will contain all the external files used in the project
 				// Example: xml files, json files, properties, excel sheets etc
 		// pom.xml file will be generate
+			// POM: Project Object Model
 			// update the version to 1.8
 				/*
 				    <properties>
