@@ -1,5 +1,5 @@
 // Static web table
-// Task - 01: Print all company names
+// Task - 01: Print all company names [Good]
 // Task - 02: If the company name is "Island Trading" then print it's entire row
 // Task - 03: Iterate through every element of webtable
 
