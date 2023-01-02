@@ -1,7 +1,7 @@
 // Locators
 	// ID [ID is always unique inside HTML DOM][1st preference will always be given to id]
-	// name [Name can be duplicate][2nd preference to name]
-	// tag name
+	// Name [Name can be duplicate][2nd preference to name]
+	// Tag Name
 		// Use Cases: [HTML tag]
 			// Find number of links on a webpage [<a> </a>]
 			// Find number of images on a webpage [HTML tag of image is always <img> </img>]

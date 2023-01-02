@@ -2,10 +2,10 @@
 	// Interface: SearchContext [Methods declared: FindElement(), FindElements()]
 	// Interface: WebDriver extends SearchContext [Methods declared: get(), click(), sendKeys(), close()] etc.
 	// Class: "RemoteWebDriver implements WebDriver, JavaScriptExecutor and TakeScreenshot
-		// All the methods of WebDriver interface is implemented in RemoteWebDriver
+		// All the methods of WebDriver interface are implemented in RemoteWebDriver
 		// RemoteWebDriver class can execute WebDriver commands on a browser running on a different (remote) machine
 		// RemoteWebDriver driver = new ChromeDriver(); can also be used against WebDriver driver = new ChromeDriver(); [Will work 100%]"
-			// Java standard says: Do top-casting with the parent interface [WebDriver driver = new ChromeDriver()] is better
+			// Java standard says: Do top-caste with the parent interface. WebDriver driver = new ChromeDriver() is better
 	// ChromiumDriver(class) extend RemoteWebDriver, ChromeDriver(class) extend ChromiumDriver
 	// FirefoxDriver(class) extends RemoteWebDriver
 
@@ -13,9 +13,9 @@
 	// Reason
 		// Chromedriver and chrome browser version are mismatched
 
-// All the messages printed in console is not error messages but Info.
+// All the messages printed in console is not error messages but Info
 
-// Apple does not provide any driver server executable for safari browser.
+// Apple does not provide any browser server executable file for safari browser
 	// Selenium itself handles safari
 	// No need to write "System.setProperty" for safari
 	// WebDriver driver = new SafariDriver(); // is sufficient

@@ -1,3 +1,5 @@
+// ================================================================================
+
 // Headless: Internally the browser will be opened but not visible/ hidden browser
 // Advantages
 	// Slightly faster
@@ -11,10 +13,14 @@
 
 // ================================================================================
 
-
 // Incognito: Does not maintain any cache or cookies
 
-// Run in headless and incognito mode
+// ================================================================================
+
+// disable-notifications: Block browser level notifications
+	// Reference: LocalResourceFiles/Images/BrowserNotifications.png
+
+
 package SeleniumBasics;
 
 import org.openqa.selenium.WebDriver;
@@ -25,9 +31,8 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class S_07_HeadlessBrowser
+public class S_07_ChromeOptions
 {
-
 	public static void main(String[] args)
 	{
 		
@@ -36,6 +41,7 @@ public class S_07_HeadlessBrowser
 		FirefoxOptions firefoxOptions = new FirefoxOptions();
 		firefoxOptions.addArguments("--headless");
 		firefoxOptions.addArguments("--incognito");
+		firefoxOptions.addArguments("disable-notifications");
 		
 		//WebDriverManager.chromedriver().setup();
 		WebDriverManager.firefoxdriver().setup();
@@ -56,5 +62,4 @@ public class S_07_HeadlessBrowser
 		
 		driver.quit();
 	}
-
 }
