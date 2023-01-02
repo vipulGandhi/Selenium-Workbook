@@ -1,10 +1,12 @@
 // Structure:
-	// <table> -> <tbody> -> multiple <tr> (table rows) -> Every <tr> has multiple <td> (table columns) -> <td> can have multiple child elements
+	// <table>
+		// <tbody>
+			// multiple <tr> (table rows)
+				// Every <tr> has multiple <td> (table columns)
+					// <td> can have multiple child elements
 
 //Get parent element
 // WebElement parent = child.findElement(By.xpath(".."));
-
-
 
 // Task: Find the company in group A whose %change is highest
 
@@ -57,10 +59,14 @@ public class S_20_DynamicWebtable_Sample01
 		// Print the text of company name element
 		System.out.println(aGroupElementSiblingCompanyElement.getText());
 		
-		// Get the company name [Method - 01]
-			// // From group A element, go to the sibling company element
+		// Get the company name [Method - 02]
+			// From group A element, go to the sibling company element
 		//aGroupElementSiblingCompanyElement = firstAGroupElement.findElement(By.xpath("preceding-sibling::td"));
 		aGroupElementSiblingCompanyElement = firstAGroupElement.findElement(By.xpath("preceding-sibling::td/a"));
+		System.out.println(aGroupElementSiblingCompanyElement.getText());
+		
+		// Get the company name [Method - 03]
+		aGroupElementSiblingCompanyElement = driver.findElement(By.xpath("(//table[@class='dataTable']//td[text()='A']/../td/a)[1]"));
 		System.out.println(aGroupElementSiblingCompanyElement.getText());
 	}
 }

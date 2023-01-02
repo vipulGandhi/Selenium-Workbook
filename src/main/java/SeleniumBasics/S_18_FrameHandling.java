@@ -1,4 +1,4 @@
-// "iFrame" and "Frame" tags: Both are same
+// "iFrame" and "frame" tags: Both are same
 // Frame is a webelement
 // Every frame has it's own HTML document
 // Driver should switch to the frame to access frame elements
@@ -6,8 +6,8 @@
 	// In some scenarios, 2 frames can have the same name. Prefer using "driver.switchTo().frame("XPath");"
 
 // Example Website: http://www.londonfreelance.org/courses/frames/index.html
-// There are multiple frames in the webpage.
-// All the elements available in this page are inside these frame
+	// There are multiple frames in the webpage
+	// All the elements available in this page are inside a frame
 
 // For nested frames:
 	// Go to any frame by: "driver.switchTo().frame("Argument of that frame");"
@@ -21,6 +21,10 @@
 
 // Confirm a certain element in a webpage is a frame
 	// Right Click -> Observe that "View Frame Source" is present
+
+// Check number of frames in a webpage
+	// Open Chrome Dev Tools
+		// Searchg for //iFrame or // frame
 
 package SeleniumBasics;
 

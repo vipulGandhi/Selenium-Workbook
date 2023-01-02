@@ -24,5 +24,4 @@ public class S_13_WrongLocatorSyntax
 		By usernameBy = By.cssSelector("#orm_getForm_subdomain"); // Correct: By.cssSelector("#Form_getForm_subdomain")
 		driver.findElement(usernameBy).sendKeys("Username");
 	}
-
 }

@@ -2,16 +2,17 @@
 	// ID [ID is always unique inside HTML DOM][1st preference will always be given to id]
 	// Name [Name can be duplicate][2nd preference to name]
 	// Tag Name
-		// Use Cases: [HTML tag]
+		// Use Cases:
 			// Find number of links on a webpage [<a> </a>]
 			// Find number of images on a webpage [HTML tag of image is always <img> </img>]
+			// Find the number of frames on a webpage[<iFrame> </iFrame>] or [<frame> </frame>]
 	// Class name [We can have same class name for different elements]
 		// The value for class attribute may contains more than one class name 
 		// [Eg. <input class="c1 c2 c3 c4">] --> Locator: By classBy = By.className("c1");
 			// Only one class name is required
 	// CSS
 	// XPath
-		// Every browser runs it's own XPath engine. The engines are strong. XPath is not slower than CSS
+		// Every browser runs it's own XPath engine. The engines are efficient. XPath is not slower than CSS
 			// The XPath index my differ
 		// Relative XPath [Recommended]
 		// Absolute XPath
@@ -60,14 +61,14 @@ public class S_08_LocatorConcept
 		
 		// 1st approach
 			// Cons
-				// Difficult to locate the element everywhere if it's id changes
+				// Difficult to locate and change the web-element everywhere if it's locator changes
 		//driver.findElement(By.id("input-email")).sendKeys("test@gmail.com");
 		//driver.findElement(By.id("input-password")).sendKeys("test@123");
 		
 		// 2nd approach
 			// Cons
-				// WebElement is created every time, even if it is not needed
 				// Every time any method of "driver" is called (eg. "driver.findElement"), a request is sent to the server
+				// WebElement is created every time, even if it is not needed
 		//WebElement emailId = driver.findElement(By.id("input-email"));
 		//WebElement password = driver.findElement(By.id("input-password"));		
 		//emailId.sendKeys("test@gmail.com");

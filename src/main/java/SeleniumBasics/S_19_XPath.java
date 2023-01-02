@@ -1,5 +1,5 @@
 // XPath Syntax
-	// "//" is used for far associates, "/"
+	// "//" is used for far associates, "/" is used for next associate
 	// Every attribute starts with @
 	// //Tag[@attribute='value']
 	// //Tag[@attribute01='value' and @attribute02='value']
@@ -8,8 +8,8 @@
 	// //Tag[contains(@attribute,'value')]
 	// //Tag[contains(@attribute,'partialAttributeText')] // For webelements where part of attribute value changes after every page refresh
 		// Example:For a webelement <input id = test_123>
-		//							<input id = test_123> [Page refresh]
-		// XPath: //input[contains(id,'test')]
+		//							<input id = test_456> [Page refresh]
+		// XPath: //input[contains(id,'test_')]
 	// //Tag[contains(text(),'value')]
 	// //Tag[contains(text(),'partialText')] // For webelements where part of text changes after every page refresh
 	// //Tag[contains(@attribute01,'value') and @attribute02='value']

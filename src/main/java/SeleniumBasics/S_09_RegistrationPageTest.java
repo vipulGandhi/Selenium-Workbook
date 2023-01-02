@@ -25,7 +25,7 @@ public class S_09_RegistrationPageTest
 		elementUtil.doSendKeys(firstnameBy, "User First Name");
 		elementUtil.doSendKeys(lastnameBy, "User Last Name");
 		
-//		try 
+//		try
 //		{
 //			Thread.sleep(1000);
 //		}

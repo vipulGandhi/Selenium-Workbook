@@ -31,8 +31,8 @@ public class S_14_JavascriptAlertPopUp
 		
 		// Move driver focus from webpage to alert pop-up
 		// Alert is a javascript method
-		Alert currentAlert = driver.switchTo().alert();
-		System.out.println(currentAlert.getText());
-		currentAlert.accept();
+		Alert alert = driver.switchTo().alert();
+		System.out.println(alert.getText());
+		alert.accept();
 	}
 }

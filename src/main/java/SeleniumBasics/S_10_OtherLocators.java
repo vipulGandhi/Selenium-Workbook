@@ -54,6 +54,7 @@ public class S_10_OtherLocators
 		//elementUtil.doSendKeys(passwordBy, "password");
 		
 		// By linktext [Only for links]
+			// Get th linktext displayed on the Web
 		//String ContactUsLinkText = "Contact";
 		//elementUtil.doClick("linktext", ContactUsLinkText);
 		

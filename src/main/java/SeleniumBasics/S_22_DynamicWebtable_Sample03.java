@@ -23,6 +23,8 @@ public class S_22_DynamicWebtable_Sample03
 		driver.get("https://app.hubspot.com/login");
 		
 		By signUpBy = By.xpath("//input[@id='username']/ancestor::form[@id='hs-login']/div[@class='signup-link']/a");
+		//By signUpBy = By.xpath("//input[@id='username']/../../../../../div[@class='signup-link']/a");
+		
 				
 		elementUtil.doClick(signUpBy);
 	}
