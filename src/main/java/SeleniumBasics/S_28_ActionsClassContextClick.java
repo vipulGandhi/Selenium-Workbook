@@ -21,10 +21,10 @@ public class S_28_ActionsClassContextClick
 		GenericUtilities.ElementUtil elementUtil = new GenericUtilities.ElementUtil(driver);
 		GenericUtilities.ActionsUtil actionsUtil = new GenericUtilities.ActionsUtil(driver);
 		
-		By rightClickuttonBy = By.xpath("//span[text()='right click me']");
+		By rightClickButtonBy = By.xpath("//span[text()='right click me']");
 		By rightClickOptionsBy = By.xpath("//ul[@class='context-menu-list context-menu-root']/li/span");
 		
-		actionsUtil.doRightClick(rightClickuttonBy);
+		actionsUtil.doRightClick(rightClickButtonBy);
 
 		elementUtil.printAllStringElements(elementUtil.getElementsText(rightClickOptionsBy));
 	}

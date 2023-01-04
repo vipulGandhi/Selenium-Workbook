@@ -26,7 +26,5 @@ public class S_40_FluentWait
 		By emailIdBy = By.id("input-email");
 		
 		elementUtil.doSendKeys(waitUtils.isPresenceOfElementLocated_FluentWait(emailIdBy, 10, 500), "User email");
-		
-		
 	}
 }

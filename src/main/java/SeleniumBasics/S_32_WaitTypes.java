@@ -23,4 +23,4 @@
 			// Both can be used interchangeably
 
 // Misc
-	// To handle asynchronous page load and AJAX calls we use selenium wait 
+	// To handle asynchronous page load and AJAX calls we use selenium wait

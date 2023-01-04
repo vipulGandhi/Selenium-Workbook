@@ -22,7 +22,7 @@ public class S_38_JavascriptAlertWait
 			By signInButtonBy = By.xpath("//input[@value='Sign in']");
 			elementUtil.doClick(signInButtonBy);
 			
-			// Selenium is excepting an alert to be present on the page
+			// Selenium is expecting an alert to be present on the page
 			// If alert is not present - [Exception] org.openqa.selenium.NoAlertPresentException
 			// Alert may take time to load
 			Alert currentAlert = waitUtils.isAlertPresent(5);

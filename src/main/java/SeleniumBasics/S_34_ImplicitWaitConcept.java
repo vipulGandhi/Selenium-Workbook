@@ -8,17 +8,19 @@
 			// Login page: 10 seconds
 			// Home page: 12 seconds
 			// Contacts page: 8 seconds
-				// Drawback_01: We have to override implicit wait for different scenarios
+// Drawback_01: We have to override implicit wait for different pages
 // Drawback_02: A global wait is applied to each and every element
 // Drawback_03: The driver has to continuously check in the background if it need to apply implicit wait or not
 // Drawback_04: It will not catch potential bugs
-	// This bug will remain unnoticed:
+	// This bug will remain un-noticed:
 		// Implicit wait is initialized with 5 seconds. One element should not take more than 2 seconds to load in the webpage
 			// With implicit wait defined, it can take up to 5 seconds to load
 // Drawback_05: It is only and only applicable for web elements. It can not be applied for non-web elements
 	// It can not be applied for:
 		// Alerts, url, page titles
 			// url is taking time to load during navigation
+				// may use pageLoadTimeout
+					// driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
 			// page title is taking time to display 
 			// Alert is taking time to display
 // Once the DOM is loaded, all the DOM elements will be visible on the page
@@ -65,8 +67,5 @@ public class S_34_ImplicitWaitConcept
 		// [Exception] org.openqa.selenium.NoSuchElementException
 		By usernameBy = By.id("login1Dummy");
 		elementUtil.doSendKeys(usernameBy, "Username");
-		
-		
-		
 	}
 }
