@@ -1,6 +1,6 @@
-//The browser only understand javascript
-
-// JSExecutor Use cases - Selenium does not provide these functionalities
+// The browser only understand javascript
+// A few web operations which can not be done with selenium, can be done with JSExecutor
+// Use cases
 	// Scroll up/ down
 	// Creation of alerts
 	// Getting the text of entire page

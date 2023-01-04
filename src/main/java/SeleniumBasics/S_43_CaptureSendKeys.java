@@ -23,5 +23,4 @@ public class S_43_CaptureSendKeys
 		
 		System.out.println(elementUtil.getElementAttributeValue(userNameBy, "value"));
 	}
-
 }

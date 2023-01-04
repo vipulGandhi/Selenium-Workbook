@@ -6,3 +6,4 @@
 // 4. Webtable handling                                            Better handling    |        Limited Support
 // 5. Performance                                                  Good               |        Good
 // 6. Get different webElements                                    No                 |        Yes
+// 7. Shadow DOM Element                                           No                 |        Yes

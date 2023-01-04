@@ -1,5 +1,5 @@
 // When we enter wrong input to any text field on the webpage some text or pop-up or alert is displayed
-	// These text or pop-up or alert are not initially present in the webpage
+	// These text or pop-up or alert are not initially active on the webpage
 	// They become active only when certain event gets triggered
 	// Idea is to grab the locator of the updated element from the webpage and then proceed for the next steps
 
@@ -41,6 +41,5 @@ public class S_46_WrongInputValidation
 		{
 			System.out.println("Invalid credentials ...");
 		}
-		
 	}
 }

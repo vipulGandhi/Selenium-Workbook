@@ -1,5 +1,5 @@
 // sendKeys() method accepts CharSequence
-// StringBuilder(), StringBuilder(), String() class implements CharSequence interface
+// StringBuilder(), StringBuffer(), String() class implements CharSequence interface
 // Keys() enum implements CharSequence interface
 // sendKeys() does not accepts null and empty string ""
 

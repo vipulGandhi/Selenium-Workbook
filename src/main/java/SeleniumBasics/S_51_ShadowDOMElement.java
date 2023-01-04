@@ -1,4 +1,4 @@
-// Only CSSSelector and Javascript executor works with Shadow OM Element
+// Only CSSSelector and Javascript executor works with Shadow DOM Element
 // XPath does not work with Shadow DOM elements
 // Shadow DOM elements comes under #shadow-root (open) section in DOM
 // Shadow section has it's own DOM structure

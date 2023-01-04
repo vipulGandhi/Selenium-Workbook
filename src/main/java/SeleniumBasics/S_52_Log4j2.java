@@ -3,7 +3,7 @@
 		// https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core
 		// Select a stable version
 			// Copy the maven dependency into Projest's pom.xml file
-	// Search foe Apache Log4j API: Log4j - API
+	// Search for Apache Log4j API: Log4j - API
 		// https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api
 		// Select a stable version
 			// Copy the maven dependency into Projest's pom.xml file

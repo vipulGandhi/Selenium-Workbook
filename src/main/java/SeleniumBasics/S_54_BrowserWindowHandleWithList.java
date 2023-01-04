@@ -1,4 +1,4 @@
-// Window handle operations are easier to handle with list than set
+// Window handle operations are easier to handle with list compared to set
 
 package SeleniumBasics;
 
