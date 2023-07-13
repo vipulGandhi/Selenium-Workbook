@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<!-- Verbose: Maximum value: 10, Minimum Value: 1 -->
+<!-- The Verbose Level in TestNG is used to define the amount of logging performed on the console.
+	 The verbosity level ranges from 0 to 10, where 10 is the most detailed logging level whereas 0 means minimal logging.  -->
+<!-- TestNG has it's own multithreading concept -->
+<!-- Thread count usually depends on machine's RAM -->
+<!-- Only with TestNG, parallel execution can be achieved in Selenium -->
+<suite name = "Smoke Test" thread-count = "3" parallel = "tests" verbose = "3">
+
+
+	<test name = "Google Test">
+		<parameter name = "url" value = "https://www.google.co.in/"/>
+		<parameter name = "browser" value = "Chrome"/>
+		<classes>
+			<class name = "AppTest.GoogleTest"/>
+		</classes>
+	</test>
+
+
+	<test name = "Open Cart Test">
+		<parameter name = "url" value = "https://demo.opencart.com/index.php?route=account/login"/>
+		<parameter name = "browser" value = "Firefox"/>
+		<classes>
+			<class name = "AppTest.OpenCartTest"/>
+		</classes>
+	</test>
+	
+	<test name = "Orange HRM Test">
+		<parameter name = "url" value = "https://www.orangehrm.com/"/>
+		<parameter name = "browser" value = "Chrome"/>
+		<classes>
+			<class name = "AppTest.OrangeHRMTest"/>
+		</classes>
+	</test> <!-- Tests -->
+
+</suite> <!-- Suite -->
